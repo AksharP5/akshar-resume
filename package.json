@@ -1,0 +1,23 @@
+{
+  "name": "akshar-resume",
+  "version": "1.0.0",
+  "description": "Akshar's CLI Resume",
+  "main": "index.js",
+  "bin": {
+    "akshar": "index.js"
+  },
+  "scripts": {
+    "test": "echo \"No tests yet\" && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AksharP5/cli-resume.git"
+  },
+  "keywords": ["resume", "cli", "cv", "akshar"],
+  "author": "Akshar Patel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AksharP5/cli-resume/issues"
+  },
+  "homepage": "https://github.com/AksharP5/cli-resume#readme"
+}
