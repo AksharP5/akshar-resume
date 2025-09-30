@@ -4,6 +4,7 @@ import chalk from "chalk";
 import qr from "qrcode-terminal";
 import wrap from "wrap-ansi";
 import fs from "fs";
+import figlet from "figlet";
 import { fileURLToPath } from "url";
 import { dirname } from "path";
 
@@ -29,39 +30,48 @@ function printBullets(bullets) {
     bullets.forEach((b) => console.log(format("  - " + b)));
 }
 
+console.log(
+    chalk.cyan(
+        figlet.textSync("Akshar Patel", {
+            horizontalLayout: "default",
+            font: "Ghost"
+        })
+    )
+);
+
 console.log(chalk.bold(chalk.green("\n" + resume.name)));
 console.log(
     `${chalk.gray(resume.contact.email)}\n` + 
     `${chalk.gray(resume.contact.github + " | " + resume.contact.linkedin + " | " + resume.contact.portfolio)}\n`
 );
 
-console.log(chalk.underline("Experience\n"));
+console.log(chalk.magenta.underline("Experience\n"));
 resume.experience.forEach((job) => {
     console.log(
-        chalk.bold(job.role) + 
-            ` - ${job.company} (${chalk.gray(job.period + ", " + job.location)})`
+        chalk.cyan.bold(job.role) + " @" +
+            chalk.red.bold(` ${job.company} `) +`(${chalk.yellow(job.period + ", " + job.location)})`
     );
     printBullets(job.bullets);
     console.log();
 });
 
-console.log(chalk.underline("Projects\n"));
+console.log(chalk.magenta.underline("Projects\n"));
 resume.projects.forEach((proj) => {
-    console.log(chalk.bold(proj.name) + " | " + proj.tech + ` (${chalk.gray(proj.period)})`);
+    console.log(chalk.cyan.bold(proj.name) + " | " + chalk.red.bold(proj.tech) + ` (${chalk.yellow(proj.period)})`);
     console.log(chalk.gray(proj.link));
     printBullets(proj.bullets);
     console.log();
 });
 
-console.log(chalk.underline("Education\n"));
+console.log(chalk.magenta.underline("Education\n"));
 console.log(
-    chalk.bold(resume.education.school) + ` - ${chalk.gray(resume.education.years + ", " + resume.education.location)}`
+    chalk.cyan.bold(resume.education.school) +  ` (${chalk.yellow(resume.education.years + ", " + resume.education.location)})`
 );
 console.log(resume.education.degree + "\n");
 
-console.log(chalk.underline("Technical Skills\n"));
+console.log(chalk.magenta.underline("Technical Skills\n"));
 Object.entries(resume.skills).forEach(([cat, list]) => {
-    console.log(chalk.bold(cat + ":") + " " + list.join(", "));
+    console.log(chalk.blue.bold(cat + ":") + " " + list.join(", "));
 });
 
 if (args.has("--qr")) {
