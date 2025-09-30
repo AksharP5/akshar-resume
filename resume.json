@@ -65,5 +65,11 @@
             ]
         }
     ],
-    
+    "education": {
+        "school": "Western New England University",
+        "years": "Aug 2021 - May 2025",
+        "degree": "Bachelor of Science in Computer Science",
+        "location": "Springfield, MA"
+    },
+     
 }
