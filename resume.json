@@ -43,6 +43,18 @@
                 "Automated categorization of followers into mutuals, non-followers, and one-sided followers."
             ]
         },
-        
+        {
+            "name": "Bear Necessities Market",
+            "tech": "JavaScript, Vue.js, Docker, RabbitMQ, MongoDB",
+            "link": "https://gitlab.com/LibreFoodPantry/client-solutions/bear-necessities-market",
+            "bullets": [
+                "Developed a microservice-based reporting system to separate reporting logic from core services, improving modularity and maintainability.",
+                "Built RESTful APIs and data pipelines to aggregate and structure visit and inventory data for reporting.",
+                "Integrated RabbitMQ for asynchronous, real-time data synchronization across microservices."
+            ]
+        },
+        {
+            
+        }
     ]
 }
