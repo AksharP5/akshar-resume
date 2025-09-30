@@ -20,7 +20,17 @@
             ]
         },
         {
-            
+            "role": "Desktop Support Assistant",
+            "company": "Western New England University",
+            "period": "March 2023 - May 2025",
+            "location": "Springfield, MA",
+            "bullets": [
+                "Provided technical support to students, faculty, and staff across Windows and macOS, resolving issues via phone, email, and remote sessions",
+                "Troubleshot walk-in issues including network connectivity, printing failures, and account access problems",
+                "Re-imaged systems and configured software to restore functionality and meet IT compliance standards",
+                "Maintained and prepared lab and classroom workstations to ensure reliable daily operation for students and faculty"
+            ]
         }
     ]
+    
 }
