@@ -54,7 +54,16 @@
             ]
         },
         {
-            
+            "name": "ourPLCC",
+            "tech": "Python, Java, Docker, Git",
+            "link": "https://github.com/ourPLCC",
+            "bullets": [
+                "Developed a modular command-line interface with subcommands, such as scan, enabling streamlined interaction with core features.",
+                "Implemented LL(1) grammar validation using FIRST and FOLLOW set algorithms, enabling automated conflict detection.",
+                "Built a custom implementation of Paull’s algorithm with bookkeeping and error tracing to eliminate left recursion in grammars",
+                "Automated testing and validation across 32 predefined languages using using Docker, GitHub Actions, and bats for CI/CD workflows"
+            ]
         }
-    ]
+    ],
+    
 }
