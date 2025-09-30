@@ -6,5 +6,21 @@
         "linkedin": "linkedin.com/in/akshar5",
         "portfolio": "aksharp5.github.io/portfolio"
     },
-    
+    "experience": [
+        {
+            "role": "Data Analyst",
+            "company": "Dow Jones",
+            "period": "July 2025 - Present",
+            "location": "Princeton, NJ",
+            "bullets": [
+                "Developed a Python script to de-duplicate save tracking data, reducing daily manual effort by over 60% and increasing reporting accuracy",
+                "Generated interactive dashboards and KPI reports to monitor QA metrics, improving visibility and accelerating stakeholder decision-making",
+                "Leveraged AWS cloud infrastructure and SQL-based queries to process high-volume data efficiently, reducing analysis time and improving reporting scalability",
+                "Delivered actionable data stories to senior stakeholders, leveraging advanced analytics to highlight trends, improve SLAs, and drive process optimization"
+            ]
+        },
+        {
+            
+        }
+    ]
 }
