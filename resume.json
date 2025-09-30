@@ -37,6 +37,7 @@
             "name": "Find Fake Friends",
             "tech": "JavaScript, HTML/CSS, Git",
             "link": "https://aksharp5.github.io/FindFakeFriends/",
+            "period": "April 2025 - June 2025",
             "bullets": [
                 "Built a privacy-first web app that analyzes Instagram data entirely in the browser.",
                 "Designed a responsive UI with drag-and-drop ZIP file upload for seamless user experience.",
@@ -47,6 +48,7 @@
             "name": "Bear Necessities Market",
             "tech": "JavaScript, Vue.js, Docker, RabbitMQ, MongoDB",
             "link": "https://gitlab.com/LibreFoodPantry/client-solutions/bear-necessities-market",
+            "period": "January 2025 - May 2025",
             "bullets": [
                 "Developed a microservice-based reporting system to separate reporting logic from core services, improving modularity and maintainability.",
                 "Built RESTful APIs and data pipelines to aggregate and structure visit and inventory data for reporting.",
@@ -57,6 +59,7 @@
             "name": "ourPLCC",
             "tech": "Python, Java, Docker, Git",
             "link": "https://github.com/ourPLCC",
+            "period": "January 2025 - May 2025",
             "bullets": [
                 "Developed a modular command-line interface with subcommands, such as scan, enabling streamlined interaction with core features.",
                 "Implemented LL(1) grammar validation using FIRST and FOLLOW set algorithms, enabling automated conflict detection.",
@@ -71,5 +74,40 @@
         "degree": "Bachelor of Science in Computer Science",
         "location": "Springfield, MA"
     },
-     
+    "skills": {
+        "Languages": [
+            "Python",
+            "Java",
+            "JavaScript",
+            "TypeScript",
+            "Go",
+            "HTML/CSS",
+            "SQL"
+        ],
+        "Frameworks/Libraries": [
+            "React.js",
+            "Vue.js",
+            "Pandas",
+            "NumPy", 
+            "Matplotlib",
+            "Flask",
+            "RabbitMQ",
+            "MongoDB"
+        ],
+        "Developer Tools": [
+            "Git",
+            "Docker",
+            "AWS",
+            "BigQuery",
+            "Snowflake",
+            "Adobe Experience Manager (AEM)"
+        ],
+        "Data & Visualization": [
+            "Looker Studio",
+            "PowerBI",
+            "Tableau",
+            "Excel",
+            "Google Sheets"
+        ]
+    }
 }
