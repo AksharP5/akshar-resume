@@ -31,6 +31,18 @@
                 "Maintained and prepared lab and classroom workstations to ensure reliable daily operation for students and faculty"
             ]
         }
+    ],
+    "projects": [
+        {
+            "name": "Find Fake Friends",
+            "tech": "JavaScript, HTML/CSS, Git",
+            "link": "https://aksharp5.github.io/FindFakeFriends/",
+            "bullets": [
+                "Built a privacy-first web app that analyzes Instagram data entirely in the browser.",
+                "Designed a responsive UI with drag-and-drop ZIP file upload for seamless user experience.",
+                "Automated categorization of followers into mutuals, non-followers, and one-sided followers."
+            ]
+        },
+        
     ]
-    
 }
