@@ -51,3 +51,14 @@ console.log(
 );
 console.log(resume.education.degree + "\n");
 
+console.log(chalk.underline("Technical Skills\n"));
+Object.entries(resume.skills).forEach(([cat, list]) => {
+    console.log(chalk.bold(cat + ":") + " " + list.join(", "));
+});
+
+if (args.has("--qr")) {
+    console.log(chalk.dim("\nPortfolio QR:"));
+    qr.generate("https://" + resume.contact.portfolio, { small: true });
+}
+
+console.log(chalk.dim("\n--- End Resume ---"));
