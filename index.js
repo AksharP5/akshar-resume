@@ -1,11 +1,19 @@
-#!/user/bin/env node
+#!/usr/bin/env node
 
-const chalk = require("chalk");
-const qr = require("qrcode-terminal");
-const wrap = require("wrap-ansi");
-const fs = require("fs");
+import chalk from "chalk";
+import qr from "qrcode-terminal";
+import wrap from "wrap-ansi";
+import fs from "fs";
+import { fileURLToPath } from "url";
+import { dirname } from "path";
 
-const resume = JSON.parse(fs.readFileSync(__dirname + "/resume.json", "utf8"));
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
+
+const resume = JSON.parse(
+  fs.readFileSync(__dirname + "/resume.json", "utf8")
+);
+
 const args = new Set(process.argv.slice(2));
 
 if (args.has("--json")) {
@@ -21,9 +29,9 @@ function printBullets(bullets) {
     bullets.forEach((b) => console.log(format("  - " + b)));
 }
 
-console.log(chalk.bold.green("\n" + resume.name));
+console.log(chalk.bold(chalk.green("\n" + resume.name)));
 console.log(
-    `${chalk.gray(resume.contact.phone + " | " + resume.contact.email)}\n` + 
+    `${chalk.gray(resume.contact.email)}\n` + 
     `${chalk.gray(resume.contact.github + " | " + resume.contact.linkedin + " | " + resume.contact.portfolio)}\n`
 );
 
@@ -39,9 +47,9 @@ resume.experience.forEach((job) => {
 
 console.log(chalk.underline("Projects\n"));
 resume.projects.forEach((proj) => {
-    console.log(chalk.bold(proj.name) + " | " + proj.tech + `(${chalk.gray(proj.period)})`);
+    console.log(chalk.bold(proj.name) + " | " + proj.tech + ` (${chalk.gray(proj.period)})`);
     console.log(chalk.gray(proj.link));
-    printBulelts(proj.bullets);
+    printBullets(proj.bullets);
     console.log();
 });
 
@@ -58,7 +66,6 @@ Object.entries(resume.skills).forEach(([cat, list]) => {
 
 if (args.has("--qr")) {
     console.log(chalk.dim("\nPortfolio QR:"));
-    qr.generate("https://" + resume.contact.portfolio, { small: true });
+    qr.generate(resume.contact.portfolio, { small: true });
 }
 
-console.log(chalk.dim("\n--- End Resume ---"));
