@@ -8,16 +8,13 @@ This is my interactive resume that runs in your terminal!
 ## Install
 
 ### Ensure [node.js](https://nodejs.org/) is installed on your device (comes with npm)
-    - Verify in Terminal 
-        ```
-        node -v
-        npm -v
-        ```
+- Verify in Terminal: 
+        ```node -v```, ```npm -v```
 
 ### Install the Package
-    ```bash
-    npm install -g akshar-resume
-    ```
+```
+npm install -g akshar-resume
+```
 
 ### See My Resume 
 
@@ -42,4 +39,5 @@ This is my interactive resume that runs in your terminal!
 ## Why?
 
 Sending out your resume gets annoying, this simple thing can make it more fun, and have it stand out!
+
 
